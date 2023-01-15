@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+
+    p{
+
+        line-height: 30px;
+        text-indent:2em;
+
+    }
+
+</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <script src="echarts.min.js"></script>
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Custom icon font-->
+  <link rel="stylesheet" href="css/fontastic.css">
+  <!-- Google fonts - Open Sans-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <!-- Fancybox-->
+  <link rel="stylesheet" href="vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/bootstrap .css">
+</head>
+<body>
+<header class="header">
+  <!-- Main Navbar-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Navbar Brand -->
+      <div class="navbar-header d-flex align-items-center justify-content-between">
+        <!-- Navbar Brand --><a href="index.html" class="navbar-brand"></a>
+      </div>
+      <!-- Navbar Menu -->
+      <div id="navbarcollapse" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active "></a>
+          </li>
+          <li class="nav-item"><a href="http://paper.ce.cn/jjrb/html/2020-05/16/content_419018.htm" class="nav-link "></a>
+          </li>
+          <li class="nav-item"><a href="http://paper.cfsn.cn/sd/content/61/2020-06/05/11/2020060511_pdf.pdf" class="nav-link "></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Hero Section-->
+<section style="background: url(img/111.jpg); background-size: cover; background-position: center center" class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div  style="float:left; text-align:left;margin-left: -80px;">
+       <p style="font-size: 20px;color: rgb(253, 252, 252);line-height: 40px;">上世纪八九十年代，互联网传入我国，在新兴科技变革的大背景下，互联网凭借着其独特的优势野蛮生长着，互联网行业不断的变革我们的生活，创造出一个个财富奇迹，互联网成为高收入，高科技的代名词。在最近的几十年互联网行业被绝大多数求职者追捧，成为求职者的香饽饽。然而从2021年开始，互联网大厂不断传出裁员风波，并且在今年年初在众多互联网大厂中形成一波不小的“裁员潮”。科大讯飞说提前吃饭的员工需要被优化；华为说要放弃平庸员工，阿里巴巴表示未来每年将会向社会输送1000名在阿里巴巴工作十年以上的人才。在今年一向被东哥视为兄弟也收到了京东的毕业证书。任正非说要将寒气传递给华为的每一个员工，华为要把活下去当作最主要的纲领。
+
+          目前互联网企业不断结构调整和人员优化，从追求盲目扩张到追求现金流。我们不仅感叹互联网企业究竟怎么了？</div>
+      </div>
+    </div>
+</section>
+<!-- Intro Section-->
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 style="color: rgb(2, 2, 2);margin-top: -40px;">寒冬之下，互联网何去何从？</h1>
+        <p style="margin-top: 50px;"><h2 class="h3">互联网行业现状</h2></p>
+        <p class="text-big"> 从智能手机开始普及之后，移动互联网进入一个飞速发展的时代，但随着互联网发展进入深水区，互联网用户增长率明显放缓，中国遇到网民红利危机。而更为严重的是，中国这一波网民增长浪潮伴随着高度的移动化同步，移动网民覆盖率已超过 70%，移动互联网用户数量已经超过九亿，网民“移动升级”的红利空间也已触顶。各个互联网大厂进入了存量博弈的时代，随之而来的就是互联网行业无限的内卷。</p>
+      </div>
+    <div class="post col-md-4">
+      <div  class="img-fluid" id="myBarChart4" style="width: 100%;height: 300px;"></div>
+    </div>
+      <div   id="myBarChart" style="width: 100%;height: 300px; margin-top: 50px;margin-bottom: 50px;"></div>
+      <p style="margin-bottom: 50px;font-size:20px;">同时在2021年国家为了限制互联网资本的无序扩张先后出台了多项有关反垄断的法律。当年阿里巴巴被罚了180多亿，美团被罚了34亿，滴滴被罚了80多亿……互联网行业内的种种变化都触动着资本市场的神经，资本纷纷选择套现离场，2021年4月，南非Naspers集团以每股近600港元出售腾讯控股2%，当时市场引发恐慌，接着6月27日，南非Naspers还是宣布要减持了腾讯股票。在2021年年初，中概互联指数见顶，指数拐头，到今年十月底，中概互联指数跌幅达百分之七十，且指数仍然没有见底的迹象，本次中概互联指数的熊市打破了中概互联只涨不跌的神话，各个上市的大厂无一幸免。</p>
+      <div  id="myBarChart1" style="width: 50%;height: 200px; float: left;"></div>
+      <div  id="myBarChart2" style="width: 50%;height: 200px; float: right;"></div>
+      <p style="margin-top: 50px;margin-bottom: 50px;font-size: 20px;">作为市值最大的中改互联龙头腾讯而言，即使基本面变化不大，也没收到国家监管的处罚，但依旧没能幸免，腾讯在2021年2月18日股价达到749.538港币/股的历史最高价后，就开始拐头下跌，至2022年10月25日收盘价为202港币/股，跌幅已经达70%多；今年1月三号腾讯收盘价为438.5港币/股，年内跌幅达50%多。
+        腾讯Q2季报显示，该公司第二季度营收 1340 亿元，同比下滑 3%；净利润 186 亿元，同比下滑 56%，非国际财务报告准则下，净利润 281 亿元，同比下滑 17%。通过季报分析腾讯的多个板块受国内外环境冲击较大，人们的消费意愿下降，以至于
+        腾讯控股发布2022年Q2财报显示，腾讯第二季度共营收1340亿元，同比下降3%，净利润 186 亿元，同比下滑 56%，其中本土游戏营收下降1%至318亿元，网络广告同比下降18%至186亿元，国际市场游戏收入107亿元，同比下降1%。网络广告Q2收入同比下降18%至186亿元，广告营收下滑主要受当前互联网行业广告需求疲软的大环境影响，业绩上面临着较大的压力。</p>
+        <div  id="myBarChart3" style="width: 50%;height: 300px; float: right;margin-bottom: 50px;"></div>
+        <div  id="myBarChart5" style="width: 50%;height: 300px; float: left;margin-bottom: 50px;"></div>
+        <p><h2 class="h3">互联网裁员原因</h2></p>
+        <p class="text-big" style="margin-top: 50px;margin-bottom: 10px;">在“互联网寒气”的侵袭下，裁员、砍掉不赚钱的业务线、缩减员工福利成了最有效的方式，各个大厂裁员幅度较大。</p>
+        <p style="margin-top: 20px;margin-bottom: 50px;font-size: 20px;"><strong>一、</strong>互联网流量见顶的同时国家也加强了对互联网大厂的监管，短期来看互联网行业触及天花板。针对阿里巴巴的无序扩张，除了罚款之外，人民日报还发文《没有所谓的马云时代，只有时代中的马云》对阿里巴巴进行敲打，后又因为金融监管，暂停了蚂蚁金融在科创板上市。在互联网巨头裹挟着资本涌进生鲜团购市场的时候，人民日报发表文章评论互联网巨头不应该只惦记着那几捆白菜。另外多家公司皆涉及教培业务，在国家实施双减政策后，相应的板块也会进行人员调整。</p></p>
+        <div style="width: 100%;float: left;""><img src="img/222.jpg" alt="..." ><img src="img/333.png" alt="..." ></div>
+        
+        <p style="margin-top: 50px;margin-bottom: 50px;font-size: 20px;"><strong>二、</strong>经济下行影响就业增长。一方面我国每年的高校毕业生人数屡创新高，另一方面，由于国内外环境的影响，我国经济面临着较大的下行压力。从2022年起，我们每年将有一千多万高校毕业生进入人才市场，这也意味着，除了新兴行业有人才缺口外之外，多数行业人才需求已经饱和。如今，在新冠疫情下的影响下，互联网行业也停了发展的脚步，相关大厂纷纷勒紧裤腰带，大厂不断缩减规模，以至于在往年大热的计算机行业在今年遇冷，不少计算机人直呼“好冷”。</p>
+        <div  id="myBarChart7" style="width: 50%;height: 300px; float: left;"></div>
+        <div  id="myBarChart8" style="width: 50%;height: 300px; float: right;"></div>
+        <p style="margin-top: 50px;margin-bottom: 50px;"><h2 class="h3">互联网人员流向</h2></p>
+        <p style="margin-top: 50px;margin-bottom: 50px;font-size: 20px;">不要盲目追逐热门行业。今年的人才市场上，以前大火的计算机和土木遇冷，有稳定编制的公务员岗位和教师等岗位报考比例依旧热门。随着国际上对于新能源产业链的重视，今年的材料学专业的毕业生就业率反而较好。从房地产的繁荣到衰落，从新能源产业链的爆发，这充分说明就业市场的风口是会变化的，由于本科的生的专业和就业市场相比具有一定的滞后性，因此我们在择业的时候需要辨别那些是具有国家政策长久支持的风口行业，分析行业的未来。</p>
+        <div  id="myBarChart6" style="width: 100%;height: 300px; float: left;"></div>
+        <h2> 总结</h2>
+        
+   
+        <p style="margin-top: 50px;margin-bottom: 50px;font-size: 20px;">每一个行业都有其发展周期和逻辑，由于多种因素的影响，从股价上看互联网行业已经毫无抵抗地经历了长达近两年的衰退，但不可否认的是，互联网行业的规模依旧十分庞大，互联网行业更是渗透进我们生活中的每一个毛孔。如今很多行业已经和互联网紧密融合，“互联网+”已经成为各行各业的发展的大趋势。当前很多互联网企业已经开始转型，它们朝着多元化方向发展。当前的互联网是处于“价值洼地”，还是下跌途中的“半山腰”尚未可知，那么，经历过这一轮“寒冬”，你认为互联网行业会迎来它的春天吗？</p>
+
+        <div style="width: 100%;float: left;""><img src="img/444.png" width="100%" height="500px" alt="..." >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript files-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper.js/umd/popper.min.js"> </script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/front.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/charts.js"></script>
+</body>
+</html>
